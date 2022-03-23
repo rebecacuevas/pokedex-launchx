@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!--Favicon-->
+    <link rel="icon" href="img/favicon.png">
+    <!--CSS-->
+    <link rel="stylesheet" href="styles.css">
+    <!--JS-->
+    <script src="app.js" defer></script>
+    <title>Pokédex</title>
+</head>
+<body>
+
+    <div class="logo">
+        <img class="img-logo" src="img/pokedex-logo.png" width="300" alt="">
+    </div>
+
+    <div class="container">
+        <div class="pokedex">
+            <div class="lights">
+                <div class="big-light">
+                    <div class="white"></div>
+                    <div class="blue"></div>
+                </div>
+                <div class="small-lights">
+                    <div class="red"></div>
+                    <div class="yellow"></div>
+                    <div class="green"></div>
+                </div>
+            </div>
+            <div class="housing">
+                <div class="screen">
+                    <div class="pokemon">
+                        <img class="pokemon-img" src="img/pokebola.png" width="100" id="pokeImg" alt=""><br>
+                    </div>
+                    <div>
+                        <span class="pokemon-name">Nombre</span>
+                        <span class="pokemon-id">Id</span>
+                        <span class="pokemon-type">Tipo</span>
+                        <span class="pokemon-weight-label">Peso</span>
+                        <span class="pokemon-weight">000</span>
+                        <span class="pokemon-height-label">Altura</span>
+                        <span class="pokemon-height">000</span>
+                    </div>
+                </div>
+                <div class="text">
+                    <!--BÚSQUEDA POR NOMBRE-->
+                    <label for="pokeName">Búsqueda por nombre</label>
+                    <input class="searchPoke" type="text" placeholder="Pikachu" id="pokeName" name="pokeName"><br>
+                    <!--BÚSQUEDA POR NÚMERO-->
+                    <label for="pokeNumber">Búsqueda por número</label>
+                    <input class="searchPoke" type="number" placeholder="000" id="pokeNumber" name="pokeNumber"><br>
+                </div>
+                <div>
+                    <button class="red-btn-name" onclick="fetchPokemon()"></button><br>
+                    <button class="red-btn-number" onclick="fetchNumber()"></button><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <!--BÚSQUEDA POR NOMBRE-->
+    <!--
+    <input type="text" placeholder="Who's that Pokemon?" id="pokeName" name="pokeName"><br>
+
+    <img src="pokebola.png" width="150" id="pokeImg" alt=""><br>
+
+    <button onclick="fetchPokemon()">Buscar Pokemon</button><br>
+    -->
+
+    <!--BÚSQUEDA POR NÚMERO-->
+    <!--
+    <input type="number" placeholder="000" id="pokeNumber" name="pokeNumber"><br>
+
+    <img src="pokebola.png" width="150" id="pokeNumberImg" alt=""><br>
+
+    <button onclick="fetchNumber()">Buscar Pokemon</button><br>
+    -->
+    
+
+    <!--
+    <input type="text" placeholder="Pokemon type" id="pokeType" name="pokeType"><br>
+    <button onclick="fetchType()">Buscar</button>
+    -->
+
+</body>
+</html>

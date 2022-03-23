@@ -1,0 +1,272 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: url(/img/pokemon-grass.png) no-repeat center center fixed;
+  background-size: cover;
+  backdrop-filter: blur(2px);
+}
+
+.logo {
+  text-align: center;
+  margin: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.pokedex {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  height: 600px;
+  background-color: #dc0a2d;
+  border: 20px solid #b70320;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+
+.lights {
+  position: absolute;
+}
+
+.white {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  top: 12px;
+  right: 170px;
+}
+
+.blue {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-color: #28aaff;
+  border-radius: 50%;
+  top: -53px;
+  right: 165px;
+}
+
+.blue:hover {
+  background-color: #47b6ff;
+  filter: blur(8px);
+}
+
+.red {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: #b70320;
+  border-radius: 50%;
+  top: -120px;
+  left: -70px;
+}
+
+.red:hover {
+  background-color: #fea3b2;
+  filter: blur(8px);
+}
+
+.yellow {
+  position: relative;
+  width: 19px;
+  height: 19px;
+  background-color: #fde242;
+  border-radius: 50%;
+  top: -140px;
+  left: -40px;
+}
+
+.yellow:hover {
+  background-color: #feea7a;
+  filter: blur(3px);
+}
+
+.green {
+  position: relative;
+  width: 19px;
+  height: 19px;
+  background-color: #2d6937;
+  border-radius: 50%;
+  top: -158px;
+  left: -10px;
+}
+
+.green:hover {
+  background-color: #4bb05c;
+  filter: blur(3px);
+}
+
+.housing {
+  display: flex;
+  justify-content: center;
+  background-color: #00312c;
+  width: 300px;
+  height: 400px;
+  position: relative;
+  top: 100px;
+}
+
+.screen {
+  background-color: #52ae5f;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  top: 30px;
+}
+
+.pokemon-name {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.7rem;
+  color: white;
+}
+
+.pokemon-id {
+  position: absolute;
+  top: 20px;
+  left: 180px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.7rem;
+  color: white;
+}
+
+.pokemon {
+  text-align: center;
+  position: absolute;
+  top: 50px;
+  left: 75px;
+}
+
+.pokemon-img:hover {
+  transform: scale(1.5);
+}
+
+.pokemon-type {
+  position: absolute;
+  bottom: 70px;
+  left: 97px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.7rem;
+  color: white;
+}
+
+.pokemon-weight-label {
+  position: absolute;
+  bottom: 40px;
+  left: 60px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.7rem;
+  color: white;
+}
+
+.pokemon-weight {
+  position: absolute;
+  bottom: 40px;
+  left: 160px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.7rem;
+  color: white;
+}
+
+.pokemon-height-label {
+  position: absolute;
+  bottom: 20px;
+  left: 60px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.7rem;
+  color: white;
+}
+
+.pokemon-height {
+  position: absolute;
+  bottom: 20px;
+  left: 160px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.7rem;
+  color: white;
+}
+
+.red-btn-name {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #dc0a2d;
+  bottom: 70px;
+  left: 250px;
+}
+
+.red-btn-name:hover {
+  width: 19px;
+  height: 19px;
+}
+
+.red-btn-number {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #dc0a2d;
+  bottom: 30px;
+  left: 250px;
+}
+
+.red-btn-number:hover {
+  width: 19px;
+  height: 19px;
+}
+
+.text {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+
+label {
+  color: #dedede;
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.4rem;
+  position: relative;
+  left: 4px;
+}
+
+.searchPoke {
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.6rem;
+  color: white;
+  background-color: #52ae5f;
+  height: 20px;
+  padding-left: 5px;
+}
+
+::placeholder {
+  color: white;
+  opacity: 70%;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .logo {
+    margin-top: 50px;
+  }
+
+  .img-logo {
+    width: 500px;
+  }
+
+  .pokedex {
+    margin-top: 100px;
+  }
+}
