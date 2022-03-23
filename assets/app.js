@@ -21,7 +21,7 @@ const fetchPokemon = () => {
     fetch(url).then((res) => {
         if (res.status != "200"){
             console.log(res);
-            pokeImage('/assets/sad-pikachu.png');
+            pokeImage('sad-pikachu.png');
         }
         else{
             return res.json();
@@ -62,7 +62,7 @@ const fetchNumber = () => {
     fetch(url).then((res) => {
         if (res.status != "200") {
             console.log(res);
-            pokeImage('/assets/sad-pikachu.png');
+            pokeImage('sad-pikachu.png');
         }
         else{
             return res.json();
